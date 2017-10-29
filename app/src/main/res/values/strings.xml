@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Music On</string>
+    <string-array name="city">
+        <item>dhaka</item>
+        <item>dhaka</item>
+        <item>dhaka</item>
+        <item>dhaka</item>
+        <item>dhaka</item>
+        <item>dhaka</item>
+        <item>dhaka</item>
+        <item>dhaka</item>
+        <item>dhaka</item>
+        <item>dhaka</item>
+        <item>dhaka</item>
+        <item>dhaka</item>
+    </string-array>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/flootingButton"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="NOW PLAYING"
+            android:textColor="#ffffff"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="song name"
+            android:textColor="#ffffff"
+            android:textSize="13dp" />
+
+        <SeekBar
+            android:id="@+id/seekkBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btPv"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="control"
+                android:text="|&lt;" />
+
+            <Button
+                android:id="@+id/btFV"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="control"
+                android:text="&lt;&lt;" />
+
+            <Button
+                android:id="@+id/btPlay"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="control"
+                android:text="||" />
+
+            <Button
+                android:id="@+id/btFF"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="control"
+                android:text=">>" />
+
+            <Button
+                android:id="@+id/btNxt"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="control"
+                android:text=">|" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="time"
+                android:id="@+id/time" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

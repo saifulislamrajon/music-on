@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context="com.example.saiful.musicon.MainWork">
+
+    <include
+        android:id="@+id/toolbar_two"
+        layout="@layout/toolbar_two" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:background="#d1c4e9"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout9"
+        android:background="#bbdefb"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/flootingButton"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout10"
+        android:background="#ce93d8"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/flootingButton"
+        android:background="#009688"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="NOW PLAYING"
+            android:textColor="#ffffff"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="song name"
+            android:textColor="#ffffff"
+            android:textSize="13dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btPv"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="control"
+                android:text="|&lt;" />
+
+            <Button
+                android:id="@+id/btFV"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="control"
+                android:text="&lt;&lt;" />
+
+            <Button
+                android:id="@+id/btPlay"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="control"
+                android:text="||" />
+
+            <Button
+                android:id="@+id/btFF"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="control"
+                android:text=">>" />
+
+            <Button
+                android:id="@+id/btNxt"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="control"
+                android:text=">|" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
